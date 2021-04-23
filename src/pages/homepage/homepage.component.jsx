@@ -1,8 +1,10 @@
 import React from 'react';
 import { Category } from '../../components/category/category.component';
 import './homepage.styles.scss';
+import {Route, Switch} from 'react-router-dom';
 
-export const HomePage = () => {
+const HomePage = (props) => {
+    console.log('HomePage props are: ', props);
     return <div className="homepage">
         <div className="header-menu">
 
@@ -10,3 +12,5 @@ export const HomePage = () => {
         <Category></Category>
     </div>
 }
+
+export default HomePage;
